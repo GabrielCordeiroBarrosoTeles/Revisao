@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Informe o nome: <input type="text" id="nome">
+    <br>Informe o sobrenome: <input type="text" id="sobrenome">
+    <br>Informe a sua idade: <input type="text" id="idade">
+    <br><button onclick="imprimir()">Enviar</button>
+    <script>
+        function imprimir(){
+            var nome=document.getElementById('nome').value
+            var sobrenome=document.getElementById('sobrenome').value
+            var idade=Number(document.getElementById('idade').value)
+            alert("Seja bem-vindo "+nome+" "+sobrenome+" de "+idade+" anos de idade!")
+
+        }
+    </script>
+</body>
+</html>

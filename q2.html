@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe valor 1: <input type="text" id="v1">
+    <br>Informe valor 2: <input type="text" id="v2">
+    <br><button onclick="imprimir()">Enviar</button>
+    <script>
+        function imprimir(){
+            var v1=Number(document.getElementById('v1').value)
+            var v2=Number(document.getElementById('v2').value)
+            if(v1>v2){  
+                alert("Valor 1 maior que valor 2")
+            }else if(v1<v2){
+                alert("Valor 1 menor que valor 2")
+            }else if(v1==v2){
+                alert("Valor 1 igual a valor 2")
+            }
+        }
+    </script>
+</body>
+</html>

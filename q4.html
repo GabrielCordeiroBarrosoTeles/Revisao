@@ -1,0 +1,29 @@
+
+
+<!--
+    Dos inputs 
+    o primeio oq vc digitar fica maiusculo
+    e o segundo fica menusculo
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    Maiusculo: <input type="text"id="nome"><br>
+    Menusculo: <input type="text"id="sobrenome">
+<script>
+    document.addEventListener("keyup",caixa_baixa_alta);
+    function caixa_baixa_alta(){
+    var nome = document.getElementById('nome')
+    var sobrenome = document.getElementById('sobrenome')
+    nome.value = nome.value.toUpperCase();//Maiúscula
+    sobrenome.value = sobrenome.value.toLowerCase(); //Minúscula
+}
+ </script>
+</body>
+</html>
